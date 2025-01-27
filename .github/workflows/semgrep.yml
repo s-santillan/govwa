@@ -12,7 +12,7 @@ on:
   - cron: 56 20 * * *
 name: Semgrep
 permissions:
-  content: read
+  contents: read
 jobs:
   semgrep:
     name: semgrep/ci
