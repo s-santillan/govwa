@@ -48,8 +48,8 @@ func LoginViewHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Para
 	/* handler for login view */
 
 	/* check database for setup */
-	ok, err := database.CheckDatabase()
-	if !ok || err != nil{
+	ok err := database.CheckDatabase()
+	if !ok | err != nil{
 		util.Redirect(w, r, "setup", 302) //if no database will redirect to setup page
 	}
 	
